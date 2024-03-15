@@ -27,10 +27,10 @@ public class InverseOfANumber
         while(number != 0) {
             //extract the last digit
             int originalDigit = number % 10;
-            //swap position and digits b/w original and inversed
-            int inversedDigit = position;
-            int inversedPosition = originalDigit;
-            result += inversedDigit * (int) Math.pow(10, inversedPosition - 1);
+            //swap position and digits b/w original and inverse
+            int inverseDigit = position;
+            int inversePosition = originalDigit;
+            result += inverseDigit * (int) Math.pow(10, inversePosition - 1);
             number /= 10;
             position++;
         }
